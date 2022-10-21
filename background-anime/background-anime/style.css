@@ -51,8 +51,19 @@ button{
     font-size: 2em;
     color: rgba(255, 255, 255, 0.534);
     background: rgba(255, 255, 255, 0.055);
+    font-size: clamp(0.5em,10vw,2em);
+
 }
 
+@media (max-width: 650px){
+    button{
+    padding: 10px 20px;
+    margin: 0px 15px;
+    }
+    .rotate h1{
+        text-align: center;
+    }
+}
 
 .rotate h1{
     width: 100%;
@@ -61,7 +72,7 @@ button{
     align-content: center;
     align-items: center;
     justify-items: center;
-    font-size: clamp(50%,10vw,500%);
+    font-size: clamp(20%,10vw,500%);
     background: linear-gradient(25deg,white,black,blue);
     background-size: 200%;
     font-weight: 400;
@@ -106,20 +117,3 @@ button{
         background-position: 100%;
     } 
 }
-
-/* @media(max-width:670px){
-    .rotate h1{
-        display: grid;
-        justify-content: center;
-        align-content: center;
-        align-items: center;
-        justify-items: center;
-        font-size: 300%;
-        background: linear-gradient(25deg,white,black,blue);
-        background-size: 200%;
-        font-weight: 400;
-        -webkit-text-fill-color: transparent;
-        -webkit-background-clip: text;
-        animation: anime 7s ease-in-out infinite;
-    }
-} */
